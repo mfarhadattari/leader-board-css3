@@ -26,7 +26,9 @@ hr {
     margin-bottom: 30px;
 }
 
-/* top players style */
+/*-----------------------
+top players style 
+------------------------*/
 .top-players {
     margin-bottom: 30px;
 }
@@ -59,7 +61,9 @@ hr {
     color: #000000;
 }
 
-/* top blogs styles */
+/*----------------------
+    top blogs styles 
+--------------------------*/
 
 .blogs {
     display: grid;
@@ -96,8 +100,15 @@ hr {
 --------------------------- */
 
 .courses{
-    display: flex;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 25px;
+}
+.course{
+   width: 250px;
+   border-radius: 5px;
+   box-shadow:  3px 3px 3px 3px  rgba(0, 0, 0, 0.05);
+   
 }
 .course .course-thumbnail img {
     width: 224px;
@@ -113,7 +124,7 @@ hr {
     font-size: 14px;
 }
 
-.course-info {
+.course-details{
     display: flex;
     justify-content: space-between;
     align-items: center
